@@ -8,20 +8,30 @@
     <style></style>
   </head>
   <body>
+    <ul id="myul"></ul>
     <script>
       //Take useranme and how many time to greet.
+      let myul = document.getElementById("myul");
       let name = prompt("enter your name..");
       let noTime = prompt("How many times to greet?");
-      console.log(typeof name);
+      //   console.log(typeof noTime);
+      parseFloat(noTime);
 
       /*while(condition){
         //code block to be executed
       }*/
-      let i = 1;
-      while (i <= 10) {
-        console.log("hi");
-        i++; //post increament Operator
-      }
+      //   let i = 1;
+      //   while (i <= noTime) {
+      //     console.log(`hi ${name}`);
+      //     myul.innerHTML += `<li>${name}</li>`;
+      //     i++; //post increament Operator
+      //   }
+    </script>
+    <script>
+      do {
+        myul.innerHTML += `<li>${name}</li>`;
+        i++;
+      } while (i <= noTime);
     </script>
   </body>
 </html>
